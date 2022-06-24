@@ -165,17 +165,18 @@ img {
 .header-contact {
 	display: flex;
 	margin-left: auto;
+	align-items: center
 }
 
 .header-contact > .items:not(:last-child) {
-	margin-right: 50px;
+	margin-right: 30px;
 }
 
 .header-contact .link {
-	display: block;
+	display: flex;
 	padding-top: 32px;
 	padding-bottom: 32px;
-
+    align-items: center;
 	color: var(--desc-text-color);
 
 	font-weight: 500;
@@ -186,6 +187,11 @@ img {
 .header-contact .link:hover,
 .header-contact .link :focus {
 	color: var(--accent-color);
+}
+
+.header-contact-icon{
+	margin-right: 10px;
+	fill: currentColor;
 }
 
 /* Hero */
