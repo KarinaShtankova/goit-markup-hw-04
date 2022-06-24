@@ -18,6 +18,7 @@
 	--main-background-color: #ffffff;
 	--primary-background-color: #2f303a;
 	--secondary-background-color: #f5f4fa;
+	--primary-icon-color: #AFB1B8;
 
 	/* Fonts */
 	--primary-font-family: "Roboto", sans-serif;
@@ -371,7 +372,7 @@ img {
 	align-items: center;
 	justify-content: center;
 
-    color: #AFB1B8;
+    color: var(--primary-icon-color);
 	border-radius: 50%;
 }
 
@@ -389,6 +390,43 @@ img {
 .team-socials-link:focus .team-icon {
 	fill: var(--light-text-color);
 }
+
+
+/* Clients */
+
+.clients-title{
+	margin-bottom: 50px;
+}
+
+
+.clients-list{
+	display: flex;
+	gap: 30px;
+
+}
+
+.clients-link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+    height: 92px;
+	color: var(--primary-icon-color);
+	border: 1px solid var(--primary-icon-color);
+    border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus{
+	color: var(--accent-color);
+	border-color: var(--accent-color);
+}
+
+
+.clients-icon{
+fill: currentColor;	
+}
+
 
 
 /* Footer */
